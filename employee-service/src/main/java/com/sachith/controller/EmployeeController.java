@@ -3,6 +3,7 @@ package com.sachith.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +13,7 @@ import com.sachith.model.Employee;
 import com.sachith.service.EmployeeService;
 
 @RestController
+@CrossOrigin()
 @RequestMapping(value="/api")
 public class EmployeeController {
 	@Autowired
